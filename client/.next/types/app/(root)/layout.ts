@@ -1,4 +1,4 @@
-// File: G:\DevGenius\001-Agency\version 01\client\src\app\(root)\layout.js
+// File: G:\DevGenius\Project 001-Agency\Version2\agency-client\src\app\(root)\layout.js
 import * as entry from '../../../../src/app/(root)/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

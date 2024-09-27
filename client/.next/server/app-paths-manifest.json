@@ -1,9 +1,7 @@
 {
-  "/(dashboard)/dashboard/checkout/page": "app/(dashboard)/dashboard/checkout/page.js",
   "/(root)/page": "app/(root)/page.js",
-  "/(root)/about-us/page": "app/(root)/about-us/page.js",
   "/(root)/contact/page": "app/(root)/contact/page.js",
-  "/(auth)/sign-in/page": "app/(auth)/sign-in/page.js",
   "/(root)/our-works/page": "app/(root)/our-works/page.js",
-  "/(root)/features/page": "app/(root)/features/page.js"
+  "/(root)/features/page": "app/(root)/features/page.js",
+  "/(root)/about-us/page": "app/(root)/about-us/page.js"
 }
