@@ -11,11 +11,6 @@
       "static/css/app/(root)/layout.css",
       "static/chunks/app/(root)/layout.js"
     ],
-    "/(root)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(root)/contact/page.js"
-    ],
     "/(root)/features/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -30,6 +25,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(root)/about-us/page.js"
+    ],
+    "/(root)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(root)/contact/page.js"
     ]
   }
 }

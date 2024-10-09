@@ -1,4 +1,4 @@
-// File: G:\DevGenius\Project 001-Agency\Version2\agency-client\src\app\(root)\about-us\page.jsx
+// File: G:\DevGenius\001-Agency\version 02\client\src\app\(root)\about-us\page.jsx
 import * as entry from '../../../../../src/app/(root)/about-us/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

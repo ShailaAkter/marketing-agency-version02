@@ -22,6 +22,20 @@ export const forgotPasswordController = async(req, res) =>
         const userVerificationCode = user.verificationCode;
 
         var transporter = nodemailer.createTransport({
+            host: "smtp.ethereal.email",
+            port: 587, 
+            auth:
+            {
+                user:  process.env.AUTH_EMAIL,
+                pass: process.env.AUTH_PASS
+            },
+        })
+
+        
+        
+        //?if you want to use gmail use authenticated email for AUTH_EMAIL and create app password for AUTH_PASSWORD then use below code to get mail in gmail. 
+        /*
+        var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth:
             {
@@ -29,6 +43,8 @@ export const forgotPasswordController = async(req, res) =>
                 pass: process.env.AUTH_PASS
             },
         })
+        */
+
 
 
         var mailOptions = 

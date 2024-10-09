@@ -38,20 +38,36 @@ export const contactController = async (req, res) =>
 
         // Set up Nodemailer transporter
         const transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com", // Replace with your SMTP server
-            port: 587,
-            secure: false,
-            auth: {
+            host: "smtp.ethereal.email",
+            port: 587, 
+            auth: 
+            {
                 user: process.env.AUTH_EMAIL,
                 pass: process.env.AUTH_PASS,
             },
-        });
+          });
+
+
+
+        //?if you want to use gmail use authenticated email for AUTH_EMAIL and create app password for AUTH_PASSWORD then use below code to get mail in gmail. 
+        /*
+        const transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port: 465, 
+            secure: true, 
+            auth: 
+            {
+              user: process.env.AUTH_EMAIL,
+              pass: process.env.AUTH_PASS, 
+            },
+          });
+        */
 
         // Setup email options
         const mailOptions = 
         {
             from: email,
-            to: process.env.AUTH_EMAIL, // Your email to receive messages
+            to: process.env.AUTH_EMAIL, 
             subject: `Contact Form Submission from ${name}`,
             text: message,
             html: `<p><strong>Name:</strong> ${name}</p>
